@@ -10,7 +10,7 @@ The [D3](https://d3js.org/) and [Plotly](https://plotly.com/javascript/basic-cha
 
 ### Files:
 
-- [Samples](https://github.com/StarkArk/belly_button_microbiota_with_plotly/blob/main/samples.json): A json file with the sample data 
+- [Samples](https://github.com/StarkArk/belly_button_microbiota_with_plotly/blob/main/samples.json): A json file with the data for 153 subject samples 
 - [Index](https://github.com/StarkArk/belly_button_microbiota_with_plotly/blob/main/index.html): html file for the website
 - [App](https://github.com/StarkArk/belly_button_microbiota_with_plotly/blob/main/static/js/app.js): javascript that implements the dashboard
 

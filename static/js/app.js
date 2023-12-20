@@ -23,7 +23,7 @@ d3.json(samplesUrl).then(function(data) {
 })
 
 
-// Controller, adjusts page based on dropdown selection
+// Controller, adjusts page based on dropdown selection - referenced in index.html file
 function optionChanged(id){
     demoBox(id)
     charts(id)
@@ -39,14 +39,12 @@ function demoBox(infoId){
         
         // Get the dict matching the sample id
         let sampleMetaDict = metaData.filter(sample => sample.id == infoId)[0]
-        console.log(sampleMetaDict)
         
         // Clear previous info in the box
         d3.select('#sample-metadata').text('');
 
         // Push the sample info into the html
         Object.entries(sampleMetaDict).forEach(([key, value]) => {
-            console.log(key, value);
             d3.select('#sample-metadata').append('h4').text(`${key.toUpperCase()}: ${value}`);
         })
     })
@@ -61,7 +59,6 @@ function charts(infoId) {
         
         // Filter on sample id and retrieve dict
         let bbbSampleDict = bbbSampleData.filter(sample => sample.id == infoId)[0];
-        console.log(bbbSampleDict)
         
         // Get the first 10 results
         let sample_valuesBar = bbbSampleDict.sample_values.slice(0,10).reverse()
