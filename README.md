@@ -21,3 +21,5 @@ The [D3](https://d3js.org/) and [Plotly](https://plotly.com/javascript/basic-cha
 
 
 ### Dashboard Snapshot
+
+![Dashboard](https://github.com/StarkArk/belly_button_microbiota_with_plotly/blob/main/DBsnap.PNG)
